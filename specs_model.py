@@ -1,5 +1,4 @@
-import ConvRNN from model
-
+from model import ConvRNN
 
 batch_size = 1
 input = torch.randn(batch_size, 3, 580, 770)
