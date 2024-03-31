@@ -26,7 +26,7 @@ class ConvRNN(nn.Module):
         
         
         # Dense layer                                  
-        self.dense1 = nn.Linear(7213568, 64) `# 256*256*3                          # 7213568 will be the output of the last conv layer                
+        self.dense1 = nn.Linear(7213568, 64)                                       # 7213568 will be the output of the last conv layer                
 
         # Recurrent layer
         self.rnn_1 = nn.LSTM(64, 128, num_layers=2, bidirectional=True, dropout=0.2, batch_first=True)
@@ -61,6 +61,8 @@ class ConvRNN(nn.Module):
 
         return x
 
-# DEBUGGING
-batch_size = 1
-input = torch.randn(batch_size, 3, 580, 770)
+# # DEBUGGING 
+# batch_size = 1
+# input = torch.randn(batch_size, 3, 580, 770)
+# model = ConvRNN(input)
+# print(model)
