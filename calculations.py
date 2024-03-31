@@ -1,4 +1,4 @@
-# Caluclations for the output size of the convolutional and maxpool layers
+# Calculations for the output size of the convolutional and maxpool layers
 
 def calcconv(h,w,p,k,s):                                # height, width, padding, kernel size, stride
     output_h = (h + 2*p - k)//s + 1
