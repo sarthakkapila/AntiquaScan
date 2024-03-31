@@ -7,6 +7,5 @@ os
 PIL 
 random
 os 
-torch
 numpy
 re 
