@@ -2,7 +2,7 @@
 
 ## Introduction
 
-
+## Will update tempelate soon......
 ## Getting Started
 
 To use the OCR tools provided in this repository, follow these steps:
