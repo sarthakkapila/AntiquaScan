@@ -13,7 +13,6 @@ class ImageTextDataset(Dataset):
         return len(self.image_paths)                               
         return len(self.text_paths)                                 
 
-
     def __getitem__(self, idx):                                     # Get image and text paths
 
         image_path = self.image_paths[idx]                          
@@ -41,7 +40,4 @@ test_root = '/Users/sarthakkapila/Desktop/Dataset-espanol/test'
 
 test_dataset = torchvision.datasets.ImageFolder(root=test_root, transform=transform)
 
-test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=75, shuffle=False)
-
-
-
+test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=1, shuffle=False)
